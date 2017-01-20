@@ -1,0 +1,22 @@
+{
+  "name": "friend-finder",
+  "version": "1.0.0",
+  "description": "Basically a dating app",
+  "main": "server.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shivamparekh/FriendFinder.git"
+  },
+  "author": "Shivam Parekh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shivamparekh/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/shivamparekh/FriendFinder#readme"
+}
