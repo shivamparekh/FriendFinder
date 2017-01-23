@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "Basically a dating app",
   "main": "server.js",
-  "dependencies": {},
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "express": "^4.14.0"
+  },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
