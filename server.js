@@ -1,4 +1,4 @@
-//packages
+// packages
 
 var express = require("express");
 var bodyParser = require('body-parser');
@@ -8,9 +8,13 @@ var path = require('path');
 
 var app = express();
 
-var PORT = process.env.PORT || 8080;
+// port
 
-app.use(express.static(__dirname + '/app/public'));
+var PORT = process.env.PORT || 3000;
+
+//static file in different directory
+
+app.use(express.static(__dirname + '/app/public/home.html'));
 
 // use bodyParser
 
@@ -28,5 +32,5 @@ require("./app/routing/htmlRoutes.js")(app);
 // listening
 
 app.listen(PORT, function() {
-	console.log("app listening on port", PORT);
+	console.log("server is working!", PORT);
 });
