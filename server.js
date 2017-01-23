@@ -2,6 +2,7 @@
 
 var express = require("express");
 var bodyParser = require('body-parser');
+var path = require('path');
 
 // create the app
 
@@ -18,6 +19,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text({ type: 'text/html' }));
 app.use(bodyParser.json({ type: 'application/*+json' }));
 app.use(bodyParser.raw({ type: 'application/vnd.custom-type' }));
+
+// routes
+
+require("./app/routing/apiRoutes.js")(app);
+require("./app/routing/htmlRoutes.js")(app);
 
 // listening
 
