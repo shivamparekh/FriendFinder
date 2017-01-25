@@ -202,15 +202,22 @@
       </div>
     </div>
 
-  <script type='text/javascript'>
+<script src='http://code.jquery.com/jquery-2.1.3.min.js'></script>
+<script type='text/javascript'>
 
-    $(document).ready(function() {
+  $(document).ready(function() {
 
-        $("#submit").on("click", function() {
+    $("#submit").on("click", function() {
 
-          console.log
+     $.ajax({newFriend, method: 'GET'}).done(function(response) {
+        
+        console.log(response.data);
 
-        };  
+      }; 
+       
+    })
+
+  });    
 
   </script>    
 

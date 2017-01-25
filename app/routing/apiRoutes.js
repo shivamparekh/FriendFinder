@@ -1,4 +1,3 @@
-
 var path = require('path');
 
 var newFriend = require('../data/friends.js');
